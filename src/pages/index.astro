@@ -1,0 +1,32 @@
+---
+// src/pages/index.astro
+import Layout from '../layouts/Layout.astro';
+import Principal from '../components/Principal.astro';
+---
+
+<Layout title="Mi Boda">
+  <Principal/>
+</Layout>
+
+<style is:global>
+  :root {
+    color-scheme: light only !important;
+  }
+  
+  html {
+    color-scheme: light only !important;
+    background-color: #ffffff !important;
+  }
+  
+  body {
+    color-scheme: light only !important;
+    background-color: #ffffff !important;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root, html, body {
+      color-scheme: light only !important;
+      background-color: #ffffff !important;
+    }
+  }
+</style>
