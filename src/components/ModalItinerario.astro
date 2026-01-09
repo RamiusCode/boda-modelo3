@@ -1,0 +1,223 @@
+---
+// src/components/ModalItinerario.astro
+---
+
+<!-- MODAL ITINERARIO -->
+<div id="modal-itinerario" class="fixed inset-0 z-50 hidden">
+  <!-- Fondo oscuro -->
+  <div id="modal-overlay" class="absolute inset-0 bg-black/80 backdrop-blur-sm"></div>
+  
+  <!-- Contenido del Modal -->
+  <div class="absolute inset-0 overflow-y-auto">
+    <div class="min-h-full flex items-start justify-center py-8 px-4">
+      <div class="relative w-full max-w-md bg-gradient-to-b from-[#f5f0e8] via-[#faf8f5] to-[#f5f0e8] rounded-2xl border-2 border-[#c9a961]/40 shadow-2xl">
+        
+        <!-- Botón Cerrar -->
+        <button id="btn-cerrar-modal" class="absolute top-4 right-4 z-10 w-10 h-10 flex items-center justify-center rounded-full bg-[#b85c38]/20 border border-[#b85c38] text-[#b85c38] hover:bg-[#b85c38]/40 transition-all duration-300">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+
+        <!-- Contenido Itinerario -->
+        <div class="p-6 pt-16">
+          
+          <!-- Título -->
+          <div class="text-center mb-4">
+            <h2 class="font-charm text-2xl text-[#b85c38] font-bold mb-2">
+              Itinerario
+            </h2>
+            <!-- Línea decorativa -->
+            <div class="flex items-center justify-center gap-3">
+              <div class="w-16 h-[2px] bg-gradient-to-r from-transparent to-[#c9a961]"></div>
+              <div class="w-2 h-2 rounded-full bg-[#c9a961]"></div>
+              <div class="w-16 h-[2px] bg-gradient-to-l from-transparent to-[#c9a961]"></div>
+            </div>
+          </div>
+
+          <!-- Timeline -->
+          <div class="relative px-4">
+            
+            <!-- Línea vertical central -->
+            <div class="absolute left-1/2 -translate-x-1/2 top-0 bottom-0 w-[2px] bg-gradient-to-b from-[#c9a961] via-[#c9a961]/50 to-[#c9a961] rounded-full"></div>
+
+            <!-- Eventos -->
+            <div class="space-y-1">
+
+              <!-- ⭐ CORAZÓN 1 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 1 - Ceremonia Religiosa -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/iglesia.png" alt="Ceremonia" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Ceremonia religiosa</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">16:00 p. m.</p>
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN 2 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 2 - Recepción -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Recepción</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">19:00 p. m.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/recepcion.png" alt="Recepción" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN 3 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 3 - Ceremonia Civil -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/anillo-de-bodas.png" alt="Civil" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Ceremonia civil</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">20:30 p. m.</p>
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN 4 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 4 - Vals -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Vals</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">21:30 p. m.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/Vals.png" alt="Vals" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN 5 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 5 - Cena -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/cena.png" alt="Cena" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Cena</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">22:00 p. m.</p>
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN 6 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 6 - Fiesta -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Fiesta</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">22:30 p. m.</p>
+                </div>
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/musica.png" alt="Fiesta" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN 7 -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- EVENTO 7 - Fin de la Fiesta -->
+              <div class="grid grid-cols-2 gap-3 py-1">
+                <div class="flex flex-col items-center justify-center">
+                  <img src="/iconos/despedida.png" alt="Despedida" class="w-10 h-10 object-contain color-terracota" />
+                </div>
+                <div class="flex flex-col items-center justify-center text-center">
+                  <p class="font-charm text-lg text-[#b85c38] font-bold leading-tight">Fin de la fiesta</p>
+                  <p class="font-charm text-base text-[#5a6650] mt-0.5">04:00 a. m.</p>
+                </div>
+              </div>
+
+              <!-- ⭐ CORAZÓN FINAL -->
+              <div class="flex justify-center py-1">
+                <div class="w-7 h-7 rounded-full bg-gradient-to-br from-[#b85c38] to-[#8d4329] flex items-center justify-center relative z-10 shadow-lg">
+                  <svg class="w-3.5 h-3.5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+                  </svg>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Botón Volver -->
+          <div class="mt-6 flex justify-center">
+            <button id="btn-volver" class="px-8 py-2.5 bg-gradient-to-r from-[#b85c38] to-[#8d4329] text-white font-charm text-lg font-bold rounded-full hover:shadow-lg hover:shadow-[#b85c38]/30 transition-all duration-300 hover:scale-105">
+              ← Volver
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+  /* 🎨 Filtro para convertir imágenes PNG negras al color terracota #b85c38 */
+  .color-terracota {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(1176%) hue-rotate(338deg) brightness(92%) contrast(87%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+  }
+
+  .color-terracota:hover {
+    filter: brightness(0) saturate(100%) invert(42%) sepia(45%) saturate(1176%) hue-rotate(338deg) brightness(92%) contrast(87%) drop-shadow(0 4px 8px rgba(184, 92, 56, 0.4));
+    transform: scale(1.1);
+  }
+</style>

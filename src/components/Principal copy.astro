@@ -1,6 +1,5 @@
 ---
 // src/components/Principal.astro
-import ModalItinerario from './ModalItinerario.astro';
 ---
 
 <section class="min-h-screen w-full flex justify-center ">
@@ -64,7 +63,7 @@ import ModalItinerario from './ModalItinerario.astro';
 
           <!-- Ceremonia Religiosa -->
           <div class="relative">
-            <a href="https://maps.google.com/maps/search/Iglesia%20Oscar%20Romero%20El%20Mechero/@-17.836610794067383,-63.12481689453125,17z?hl=es" target="_blank">
+            <a href="https://maps.app.goo.gl/CdFc1Dc2zuvYyGaE7" target="_blank">
               <button class="boton-accion bg-[#b85c38] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -84,7 +83,7 @@ import ModalItinerario from './ModalItinerario.astro';
 
           <!-- Recepción -->
           <div class="relative">
-            <a href="https://maps.app.goo.gl/wZnm7STwBRbXGDVQ8?g_st=aw" target="_blank">
+            <a href="https://maps.app.goo.gl/JcjmS1Gi3aMXQNmp6" target="_blank">
               <button class="boton-accion bg-[#b85c38] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -104,17 +103,15 @@ import ModalItinerario from './ModalItinerario.astro';
 
         </div>
 
-        <!-- Dos botones inferiores: Confirmar Asistencia e Itinerario -->
-        <div class="flex gap-6 justify-center w-full px-2">
-          
-          <!-- Confirmar Asistencia -->
+        <!-- Botón único centrado: Confirmar Asistencia -->
+        <div class="flex justify-center w-full px-2">
           <div class="relative">
-            <a href="https://wa.link/dj19y0" target="_blank">
-              <button class="boton-accion bg-[#b85c38] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
+            <a href="https://wa.link/t6x3cu" target="_blank">
+              <button class="boton-accion bg-[#b85c38] hover:bg-[#3d4a39] text-white px-6 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
                 <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
                 </svg>
-                Confirmar
+                Confirmar Asistencia
               </button>
             </a>
             <!-- MANO apuntando al botón -->
@@ -125,24 +122,6 @@ import ModalItinerario from './ModalItinerario.astro';
               id="mano-confirmar"
             />
           </div>
-
-          <!-- Itinerario - Abre Modal -->
-          <div class="relative">
-            <button id="btn-itinerario" class="boton-accion bg-[#b85c38] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-              <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              Itinerario
-            </button>
-            <!-- MANO apuntando al botón -->
-            <img
-              src="/imagenes/mano.png"
-              alt="Presionar aquí"
-              class="mano-pointer absolute -bottom-4 -right-4 w-7 h-7 object-contain opacity-0 pointer-events-none z-20"
-              id="mano-itinerario"
-            />
-          </div>
-
         </div>
       </div>
 
@@ -171,9 +150,6 @@ import ModalItinerario from './ModalItinerario.astro';
     </video>
   </div>
 </div>
-
-<!-- Modal Itinerario -->
-<ModalItinerario />
 
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant:wght@300;400;600;700&display=swap');
@@ -216,6 +192,7 @@ import ModalItinerario from './ModalItinerario.astro';
       // Timeline con todas las animaciones simultáneas
       const tl = gsap.timeline({ delay: 0.3 });
 
+      // Todas las animaciones al mismo tiempo
       tl.to("#flor-izq-capa1, #flor-izq-capa2", {
         opacity: 0.8,
         x: 0,
@@ -269,6 +246,7 @@ import ModalItinerario from './ModalItinerario.astro';
         duration: 1.2,
         ease: "power2.out"
       }, "<")
+      // MANOS aparecen inmediatamente después
       .to(".mano-pointer", {
         opacity: 1,
         scale: 1,
@@ -309,7 +287,9 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2
       });
 
-      // ═══ FLORES CON EFECTO 3D ═══
+      // ═══ FLOR IZQUIERDA - EFECTO 3D EN CAPAS ═══
+      
+      // CAPA 1 (Abajo - Hoja Dorada) - Movimiento base
       gsap.to("#flor-izq-capa1", {
         y: -6,
         x: 3,
@@ -321,6 +301,7 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2
       });
 
+      // CAPA 2 (Encima - Flor) - Movimiento desfasado para efecto 3D
       gsap.to("#flor-izq-capa2", {
         y: -8,
         x: 5,
@@ -332,6 +313,7 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2.4
       });
 
+      // Escala CAPA 1
       gsap.to("#flor-izq-capa1", {
         scale: 1.03,
         duration: 4.2,
@@ -341,6 +323,7 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2.3
       });
 
+      // Escala CAPA 2 (diferente timing)
       gsap.to("#flor-izq-capa2", {
         scale: 1.05,
         duration: 3.8,
@@ -350,6 +333,9 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2.7
       });
 
+      // ═══ FLOR DERECHA - EFECTO 3D EN CAPAS (SIMÉTRICO) ═══
+      
+      // CAPA 1 (Abajo - Hoja Dorada) - Movimiento simétrico a la izquierda
       gsap.to("#flor-der-capa1", {
         y: -6,
         x: -3,
@@ -361,6 +347,7 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2
       });
 
+      // CAPA 2 (Encima - Flor) - Movimiento simétrico desfasado
       gsap.to("#flor-der-capa2", {
         y: -8,
         x: -5,
@@ -372,6 +359,7 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2.4
       });
 
+      // Escala CAPA 1 - Simétrica
       gsap.to("#flor-der-capa1", {
         scale: 1.03,
         duration: 4.2,
@@ -381,6 +369,7 @@ import ModalItinerario from './ModalItinerario.astro';
         delay: 2.3
       });
 
+      // Escala CAPA 2 - Simétrica
       gsap.to("#flor-der-capa2", {
         scale: 1.05,
         duration: 3.8,
@@ -432,7 +421,7 @@ import ModalItinerario from './ModalItinerario.astro';
         });
       });
 
-      // ═══ FUNCIONALIDAD DEL VIDEO ═══
+      // Funcionalidad del video
       const videoModal = document.getElementById('video-modal');
       const videoPlayer = document.getElementById('video-player');
       const cerrarVideo = document.getElementById('cerrar-video');
@@ -449,7 +438,7 @@ import ModalItinerario from './ModalItinerario.astro';
         }
       });
 
-      const cerrarModalVideo = () => {
+      const cerrarModal = () => {
         gsap.to(videoModal, {
           opacity: 0,
           scale: 0.95,
@@ -466,54 +455,11 @@ import ModalItinerario from './ModalItinerario.astro';
         }
       };
 
-      cerrarVideo?.addEventListener('click', cerrarModalVideo);
+      cerrarVideo?.addEventListener('click', cerrarModal);
       
       videoModal?.addEventListener('click', (e) => {
         if (e.target === videoModal) {
-          cerrarModalVideo();
-        }
-      });
-
-      // ═══ FUNCIONALIDAD DEL MODAL ITINERARIO ═══
-      const btnItinerario = document.getElementById('btn-itinerario');
-      const modalItinerario = document.getElementById('modal-itinerario');
-      const btnCerrarModal = document.getElementById('btn-cerrar-modal');
-      const btnVolver = document.getElementById('btn-volver');
-      const overlayItinerario = document.getElementById('modal-overlay');
-
-      // Abrir modal itinerario
-      btnItinerario?.addEventListener('click', () => {
-        modalItinerario?.classList.remove('hidden');
-        document.body.style.overflow = 'hidden';
-        gsap.fromTo(modalItinerario, 
-          { opacity: 0, scale: 0.95 },
-          { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }
-        );
-      });
-
-      // Cerrar modal itinerario
-      const cerrarModalItinerario = () => {
-        gsap.to(modalItinerario, {
-          opacity: 0,
-          scale: 0.95,
-          duration: 0.4,
-          ease: "power2.in",
-          onComplete: () => {
-            modalItinerario?.classList.add('hidden');
-            document.body.style.overflow = 'auto';
-          }
-        });
-      };
-
-      btnCerrarModal?.addEventListener('click', cerrarModalItinerario);
-      btnVolver?.addEventListener('click', cerrarModalItinerario);
-      overlayItinerario?.addEventListener('click', cerrarModalItinerario);
-
-      // Cerrar con ESC
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          cerrarModalVideo();
-          cerrarModalItinerario();
+          cerrarModal();
         }
       });
     });
