@@ -2,40 +2,66 @@
 // src/components/Principal.astro
 ---
 
-<section class="min-h-screen w-full flex justify-center ">
+<section class="min-h-screen w-full flex justify-center">
   <div class="relative w-full max-w-[480px]">
-    
     <!-- Decoración floral superior -->
     <div class="absolute top-0 left-0 right-0 h-32 overflow-hidden">
       <!-- FLOR IZQUIERDA - CAPA 1 (Abajo - Hoja Dorada volteada verticalmente) -->
       <div id="flor-izq-capa1" class="absolute top-0 left-0 w-28 h-28 z-10">
-        <img src="/imagenes/hojadorada.png" alt="" class="w-full h-full object-contain scale-y-[-1]" />
+        <img
+          src="/imagenes/hojadorada.png"
+          alt=""
+          class="w-full h-full object-contain scale-y-[-1]"
+        />
       </div>
       <!-- FLOR IZQUIERDA - CAPA 2 (Encima - Flor Original) -->
       <div id="flor-izq-capa2" class="absolute top-0 left-0 w-28 h-28 z-[11]">
-        <img src="/imagenes/iz.png" alt="" class="w-full h-full object-contain" />
+        <img
+          src="/imagenes/iz.png"
+          alt=""
+          class="w-full h-full object-contain"
+        />
       </div>
 
       <!-- FLOR DERECHA - CAPA 1 (Abajo - Hoja Dorada volteada horizontal y verticalmente) -->
-      <div id="flor-der-capa1" class="absolute top-0 right-0 w-28 h-28 opacity-80 z-10">
-        <img src="/imagenes/hojadorada.png" alt="" class="w-full h-full object-contain scale-x-[-1] scale-y-[-1]" />
+      <div
+        id="flor-der-capa1"
+        class="absolute top-0 right-0 w-28 h-28 opacity-80 z-10"
+      >
+        <img
+          src="/imagenes/hojadorada.png"
+          alt=""
+          class="w-full h-full object-contain scale-x-[-1] scale-y-[-1]"
+        />
       </div>
       <!-- FLOR DERECHA - CAPA 2 (Encima - Flor Original) -->
-      <div id="flor-der-capa2" class="absolute top-0 right-0 w-28 h-28 opacity-80 z-[11]">
-        <img src="/imagenes/de.png" alt="" class="w-full h-full object-contain" />
+      <div
+        id="flor-der-capa2"
+        class="absolute top-0 right-0 w-28 h-28 opacity-80 z-[11]"
+      >
+        <img
+          src="/imagenes/de.png"
+          alt=""
+          class="w-full h-full object-contain"
+        />
       </div>
     </div>
 
     <!-- Contenido principal -->
     <div class="relative z-10 pt-28 pb-2 px-6">
-      
       <!-- Título: ¡NOS CASAMOS! -->
-      <h1 id="titulo" class="text-2xl font-serif text-[#c9a961] text-center mb-6 tracking-wider font-bold">
+      <h1
+        id="titulo"
+        class="text-2xl font-serif text-[#c9a961] text-center mb-6 tracking-wider font-bold"
+      >
         ¡NOS CASAMOS!
       </h1>
 
       <!-- Nombres de los novios -->
-      <div id="nombres" class="text-3xl md:text-5xl font-script text-[#1f3a5f] text-center mb-6">
+      <div
+        id="nombres"
+        class="text-3xl md:text-5xl font-script text-[#1f3a5f] text-center mb-6"
+      >
         Carlos Alberto <span class="text-4xl mx-2">&</span> Maribel
       </div>
 
@@ -47,12 +73,19 @@
       <!-- Sobre -->
       <div id="sobre-container" class="flex justify-center mb-4 cursor-pointer">
         <div class="relative">
-          <img src="/imagenes/sobre.webp" alt="Sobre de invitación" class="w-[280px]" />
+          <img
+            src="/imagenes/sobre.webp"
+            alt="Sobre de invitación"
+            class="w-[280px]"
+          />
         </div>
       </div>
 
       <!-- Texto instrucción -->
-      <p id="instruccion" class="text-center text-[#1f3a5f] font-serif text-base uppercase tracking-wide mb-4 px-4">
+      <p
+        id="instruccion"
+        class="text-center text-[#1f3a5f] font-serif text-base uppercase tracking-wide mb-4 px-4"
+      >
         Hacer clic en el sobre para ver la invitación
       </p>
 
@@ -60,14 +93,30 @@
       <div class="flex flex-col items-center gap-6 mb-2">
         <!-- Dos botones superiores: Ceremonia y Recepción -->
         <div class="flex gap-6 justify-center w-full px-2">
-
           <!-- Ceremonia Religiosa -->
           <div class="relative">
             <a href="https://maps.app.goo.gl/CdFc1Dc2zuvYyGaE7" target="_blank">
-              <button class="boton-accion bg-[#1f3a5f] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+              <button
+                class="boton-accion bg-[#1f3a5f] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
                 Ceremonia
               </button>
@@ -83,11 +132,31 @@
 
           <!-- Recepción -->
           <div class="relative">
-            <a href="https://maps.app.goo.gl/JcjmS1Gi3aMXQNmp6" target="_blank">
-              <button class="boton-accion bg-[#1f3a5f] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+            <a
+              href="https://maps.app.goo.gl/TqCyLNtWY62gMc8X8?g_st=iw"
+              target="_blank"
+            >
+              <button
+                class="boton-accion bg-[#1f3a5f] hover:bg-[#3d4a39] text-white px-4 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  ></path>
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
                 Recepción
               </button>
@@ -100,16 +169,24 @@
               id="mano-recepcion"
             />
           </div>
-
         </div>
 
         <!-- Botón único centrado: Confirmar Asistencia -->
         <div class="flex justify-center w-full px-2">
           <div class="relative">
             <a href="https://wa.link/t6x3cu" target="_blank">
-              <button class="boton-accion bg-[#1f3a5f] hover:bg-[#3d4a39] text-white px-6 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2">
-                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+              <button
+                class="boton-accion bg-[#1f3a5f] hover:bg-[#3d4a39] text-white px-6 py-2.5 rounded text-xs font-semibold transition-all duration-300 shadow-md hover:shadow-lg flex items-center gap-2"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="w-4 h-4"
+                  fill="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"
+                  ></path>
                 </svg>
                 Confirmar Asistencia
               </button>
@@ -124,42 +201,59 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </section>
 
 <!-- Modal para el video -->
 <div id="video-modal" class="hidden fixed inset-0 z-50">
-  <div class="absolute inset-0 bg-cover bg-center blur-2xl opacity-40" 
-       style="background-image: url('/imagenes/portada2.webp');"></div>
+  <div
+    class="absolute inset-0 bg-cover bg-center blur-2xl opacity-40"
+    style="background-image: url('/imagenes/portada2.webp');"
+  >
+  </div>
   <div class="absolute inset-0 bg-black bg-opacity-50"></div>
-  
+
   <div class="relative w-full h-full flex justify-center items-center">
-    <button id="cerrar-video" class="absolute top-4 right-4 bg-white/90 backdrop-blur-md border border-white/50 text-[#5a6650] rounded-full px-4 py-2 flex items-center gap-1.5 z-20 hover:bg-white hover:scale-105 transition-all shadow-lg">
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+    <button
+      id="cerrar-video"
+      class="absolute top-4 right-4 bg-white/90 backdrop-blur-md border border-white/50 text-[#5a6650] rounded-full px-4 py-2 flex items-center gap-1.5 z-20 hover:bg-white hover:scale-105 transition-all shadow-lg"
+    >
+      <svg
+        class="w-4 h-4"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2.5"
+          d="M10 19l-7-7m0 0l7-7m-7 7h18"></path>
       </svg>
       <span class="font-serif text-xs tracking-wide font-medium">Volver</span>
     </button>
-    
-    <video id="video-player" class="w-full h-full object-cover md:object-contain" controls>
-      <source src="/video/video.mp4" type="video/mp4">
+
+    <video
+      id="video-player"
+      class="w-full h-full object-cover md:object-contain"
+      controls
+    >
+      <source src="/video/video.mp4" type="video/mp4" />
       Tu navegador no soporta el video.
     </video>
   </div>
 </div>
 
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant:wght@300;400;600;700&display=swap');
-  
+  @import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant:wght@300;400;600;700&display=swap");
+
   .font-script {
-    font-family: 'Great Vibes', cursive;
+    font-family: "Great Vibes", cursive;
   }
-  
+
   .font-serif {
-    font-family: 'Cormorant', serif;
+    font-family: "Cormorant", serif;
   }
 
   /* Personalizar controles del video */
@@ -167,7 +261,7 @@
     background-color: rgba(255, 255, 255, 0.9);
     border-radius: 50%;
   }
-  
+
   #video-player::-webkit-media-controls-panel {
     background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   }
@@ -176,11 +270,19 @@
 <script>
   import { gsap } from "gsap";
 
-  if (typeof window !== 'undefined') {
+  if (typeof window !== "undefined") {
     document.addEventListener("DOMContentLoaded", () => {
       // Estado inicial - Todo oculto
-      gsap.set("#flor-izq-capa1, #flor-izq-capa2", { opacity: 0, x: -100, rotation: -15 });
-      gsap.set("#flor-der-capa1, #flor-der-capa2", { opacity: 0, x: 100, rotation: 15 });
+      gsap.set("#flor-izq-capa1, #flor-izq-capa2", {
+        opacity: 0,
+        x: -100,
+        rotation: -15,
+      });
+      gsap.set("#flor-der-capa1, #flor-der-capa2", {
+        opacity: 0,
+        x: 100,
+        rotation: 15,
+      });
       gsap.set("#titulo", { opacity: 0, y: -30, scale: 0.9 });
       gsap.set("#nombres", { opacity: 0, scale: 0.85 });
       gsap.set("#fecha", { opacity: 0, y: 20 });
@@ -198,62 +300,94 @@
         x: 0,
         rotation: 0,
         duration: 1.2,
-        ease: "power2.out"
+        ease: "power2.out",
       })
-      .to("#flor-der-capa1, #flor-der-capa2", {
-        opacity: 0.8,
-        x: 0,
-        rotation: 0,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      .to("#titulo", {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      .to("#nombres", {
-        opacity: 1,
-        scale: 1,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      .to("#fecha", {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      .to("#sobre-container", {
-        opacity: 1,
-        scale: 1,
-        y: 0,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      .to("#instruccion", {
-        opacity: 1,
-        y: 0,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      .to(".boton-accion", {
-        opacity: 1,
-        y: 0,
-        scale: 1,
-        duration: 1.2,
-        ease: "power2.out"
-      }, "<")
-      // MANOS aparecen inmediatamente después
-      .to(".mano-pointer", {
-        opacity: 1,
-        scale: 1,
-        rotation: 0,
-        duration: 0.3,
-        ease: "power2.out"
-      }, "+=0.1");
+        .to(
+          "#flor-der-capa1, #flor-der-capa2",
+          {
+            opacity: 0.8,
+            x: 0,
+            rotation: 0,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        .to(
+          "#titulo",
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        .to(
+          "#nombres",
+          {
+            opacity: 1,
+            scale: 1,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        .to(
+          "#fecha",
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        .to(
+          "#sobre-container",
+          {
+            opacity: 1,
+            scale: 1,
+            y: 0,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        .to(
+          "#instruccion",
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        .to(
+          ".boton-accion",
+          {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            duration: 1.2,
+            ease: "power2.out",
+          },
+          "<",
+        )
+        // MANOS aparecen inmediatamente después
+        .to(
+          ".mano-pointer",
+          {
+            opacity: 1,
+            scale: 1,
+            rotation: 0,
+            duration: 0.3,
+            ease: "power2.out",
+          },
+          "+=0.1",
+        );
 
       // Animación de presionar botón (loop infinito) para todas las manos
       tl.add(() => {
@@ -263,7 +397,7 @@
           duration: 0.5,
           ease: "power1.inOut",
           repeat: -1,
-          yoyo: true
+          yoyo: true,
         });
       });
 
@@ -274,7 +408,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2
+        delay: 2,
       });
 
       // Brillo sutil en los nombres
@@ -284,11 +418,11 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2
+        delay: 2,
       });
 
       // ═══ FLOR IZQUIERDA - EFECTO 3D EN CAPAS ═══
-      
+
       // CAPA 1 (Abajo - Hoja Dorada) - Movimiento base
       gsap.to("#flor-izq-capa1", {
         y: -6,
@@ -298,7 +432,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2
+        delay: 2,
       });
 
       // CAPA 2 (Encima - Flor) - Movimiento desfasado para efecto 3D
@@ -310,7 +444,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2.4
+        delay: 2.4,
       });
 
       // Escala CAPA 1
@@ -320,7 +454,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2.3
+        delay: 2.3,
       });
 
       // Escala CAPA 2 (diferente timing)
@@ -330,11 +464,11 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2.7
+        delay: 2.7,
       });
 
       // ═══ FLOR DERECHA - EFECTO 3D EN CAPAS (SIMÉTRICO) ═══
-      
+
       // CAPA 1 (Abajo - Hoja Dorada) - Movimiento simétrico a la izquierda
       gsap.to("#flor-der-capa1", {
         y: -6,
@@ -344,7 +478,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2
+        delay: 2,
       });
 
       // CAPA 2 (Encima - Flor) - Movimiento simétrico desfasado
@@ -356,7 +490,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2.4
+        delay: 2.4,
       });
 
       // Escala CAPA 1 - Simétrica
@@ -366,7 +500,7 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2.3
+        delay: 2.3,
       });
 
       // Escala CAPA 2 - Simétrica
@@ -376,61 +510,62 @@
         ease: "sine.inOut",
         repeat: -1,
         yoyo: true,
-        delay: 2.7
+        delay: 2.7,
       });
 
       // Hover elegante en el sobre con ZOOM grande
-      const sobreContainer = document.getElementById('sobre-container');
+      const sobreContainer = document.getElementById("sobre-container");
       if (sobreContainer) {
-        sobreContainer.addEventListener('mouseenter', () => {
-          gsap.to('#sobre-container', {
+        sobreContainer.addEventListener("mouseenter", () => {
+          gsap.to("#sobre-container", {
             scale: 1.15,
             duration: 0.6,
-            ease: "power2.out"
+            ease: "power2.out",
           });
         });
 
-        sobreContainer.addEventListener('mouseleave', () => {
-          gsap.to('#sobre-container', {
+        sobreContainer.addEventListener("mouseleave", () => {
+          gsap.to("#sobre-container", {
             scale: 1,
             duration: 0.6,
-            ease: "power2.out"
+            ease: "power2.out",
           });
         });
       }
 
       // Hover en botones
-      const botones = document.querySelectorAll('.boton-accion');
-      botones.forEach(boton => {
-        boton.addEventListener('mouseenter', () => {
+      const botones = document.querySelectorAll(".boton-accion");
+      botones.forEach((boton) => {
+        boton.addEventListener("mouseenter", () => {
           gsap.to(boton, {
             scale: 1.05,
             y: -3,
             duration: 0.3,
-            ease: "back.out(2)"
+            ease: "back.out(2)",
           });
         });
 
-        boton.addEventListener('mouseleave', () => {
+        boton.addEventListener("mouseleave", () => {
           gsap.to(boton, {
             scale: 1,
             y: 0,
             duration: 0.3,
-            ease: "power2.out"
+            ease: "power2.out",
           });
         });
       });
 
       // Funcionalidad del video
-      const videoModal = document.getElementById('video-modal');
-      const videoPlayer = document.getElementById('video-player');
-      const cerrarVideo = document.getElementById('cerrar-video');
+      const videoModal = document.getElementById("video-modal");
+      const videoPlayer = document.getElementById("video-player");
+      const cerrarVideo = document.getElementById("cerrar-video");
 
-      sobreContainer?.addEventListener('click', () => {
-        videoModal?.classList.remove('hidden');
-        gsap.fromTo(videoModal, 
+      sobreContainer?.addEventListener("click", () => {
+        videoModal?.classList.remove("hidden");
+        gsap.fromTo(
+          videoModal,
           { opacity: 0, scale: 0.95 },
-          { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" }
+          { opacity: 1, scale: 1, duration: 0.5, ease: "power2.out" },
         );
         if (videoPlayer) {
           videoPlayer.muted = false;
@@ -445,8 +580,8 @@
           duration: 0.4,
           ease: "power2.in",
           onComplete: () => {
-            videoModal?.classList.add('hidden');
-          }
+            videoModal?.classList.add("hidden");
+          },
         });
         videoPlayer?.pause();
         if (videoPlayer) {
@@ -455,9 +590,9 @@
         }
       };
 
-      cerrarVideo?.addEventListener('click', cerrarModal);
-      
-      videoModal?.addEventListener('click', (e) => {
+      cerrarVideo?.addEventListener("click", cerrarModal);
+
+      videoModal?.addEventListener("click", (e) => {
         if (e.target === videoModal) {
           cerrarModal();
         }
